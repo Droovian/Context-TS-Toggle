@@ -1,4 +1,5 @@
 import Container from "./components/Container";
+import Products from "./Products";
 import ThemeContext from "./context/context";
 import Button from "./components/Button";
 import { useState } from "react";
@@ -21,6 +22,8 @@ function App() {
         </div>
         <Button onClick={handleClick} className="absolute top-0 m-3">Toggle Theme</Button>
       </>
+
+      <Products/>
     </ThemeContext.Provider>
   )
 }
